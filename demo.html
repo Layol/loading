@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    canvas{
+        background-color: rgba(0,0,0,0.7)
+    }
+    </style>
+</head>
+<body>
+    <canvas width="100" height="150"></canvas>
+    <canvas width="100" height="150"></canvas>
+    <canvas width="100" height="150"></canvas>
+    <canvas width="100" height="150"></canvas>
+    <canvas width="100" height="150"></canvas>
+    <canvas width="100" height="150"></canvas>
+    <canvas width="100" height="150"></canvas>
+    <canvas width="100" height="150"></canvas>
+    <script src="./load.js"></script>
+    <script>
+    new Loading({
+        itemWidth:3,
+        itemHeight:8,
+        num:9,
+        color:'#d5d5d5',
+        interval:400
+    })
+    new Loading({
+        type:'chrysanthemum-circle',
+        color:'#24A8FC'
+    },document.getElementsByTagName('canvas')[1])
+    new Loading({
+        type:'chrysanthemum-sizeCircle',
+        itemWidth:8,
+        color:'#4C8BF5',
+        interval:400,
+        pos_X:50,
+        pos_Y:50
+    },document.getElementsByTagName('canvas')[2])
+    new Loading({
+        type:'scroll-default',
+        color:'#4C8BF5',
+        interval:400,
+        radius:12
+    },document.getElementsByTagName('canvas')[3])
+    new Loading({
+        type:'scroll-ball',
+        color:'#34AAFC',
+        bgColor:'#036CB4',
+        radius:12
+    },document.getElementsByTagName('canvas')[4])
+    new Loading({
+        type:'scroll-fire',
+        color:'#34AAFC',
+        bgColor:'#036CB4',
+        radius:12
+    },document.getElementsByTagName('canvas')[5])
+    new Loading({
+        type:'chrysanthemum-reverse',
+        num:8,
+        itemWidth:3,
+        itemHeight:8,
+        interval:400
+    },document.getElementsByTagName('canvas')[6])
+    new Loading({
+        type:'chrysanthemum-sector',
+        radius:8,
+        interval:400,
+        pos_X:50,
+        pos_Y:50
+    },document.getElementsByTagName('canvas')[7])
+    </script>
+</body>
+</html>
